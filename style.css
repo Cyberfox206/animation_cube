@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -13,7 +13,7 @@ body{
     background-color: black;
 }
 
-:root{
+:root {
     --coror_fo_cube: blue;
 }
 
@@ -83,7 +83,7 @@ body{
 
 /* the parte of the code is for the biotiful cube */
 
-.cube{
+.cube {
     width: 200px;
     height: 200px;
     position: relative;
@@ -92,20 +92,21 @@ body{
     animation: roation_cube 10s infinite alternate-reverse;
 }
 
-.cube div{
+.cube div {
     width: 100%;
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
 }
 
-.face{
+.face {
     width: 100%;
     height: 100%;
     position: absolute;
+    border: #151515 3px solid;
 }
 
-.up{
+.up {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -113,39 +114,44 @@ body{
     transform: rotateX(90deg) translateZ(100px);
 }
 
-.up::before{
+.up::before {
     height: 200px;
     width: 200px;
     content: '';
     position: absolute;
     background-color: var(--coror_fo_cube);
+    box-shadow: 1px 1px 20px 19px var(--coror_fo_cube);
     transform: translateZ(-250px);
 }
 
-.left{
-    background: linear-gradient(#151515,var(--coror_fo_cube)); 
-    transform:rotateY(90deg) translateZ(100px);
+.left {
+    background: linear-gradient(#151515, var(--coror_fo_cube));
+    transform: rotateY(90deg) translateZ(100px);
 }
-.right{
-    background: linear-gradient(#151515,var(--coror_fo_cube)); 
+
+.right {
+    background: linear-gradient(#151515, var(--coror_fo_cube));
     transform: rotateY(-90deg) translateZ(100px);
 }
-.back{
-    background: linear-gradient(#151515,var(--coror_fo_cube)); 
+
+.back {
+    background: linear-gradient(#151515, var(--coror_fo_cube));
     transform: rotateX(0) translateZ(-100px);
 }
-.front{
-    background: linear-gradient(#151515,var(--coror_fo_cube)); 
+
+.front {
+    background: linear-gradient(#151515, var(--coror_fo_cube));
     transform: rotateX(0deg) translateZ(100px);
 }
 
 
 @keyframes roation_cube {
-    0%{
+    0% {
         transform: rotateX(-30deg) rotateY(39deg);
     }
-    100%{
-        transform:  rotateX(-30deg) rotateY(321deg);
+
+    100% {
+        transform: rotateX(-30deg) rotateY(321deg);
     }
 }
 
