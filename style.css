@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--bc_color);
+    cursor: none;
     /* animation: body_switch_collor 30s infinite; */
 }
 
