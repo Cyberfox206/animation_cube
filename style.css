@@ -10,11 +10,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: body_switch_collor 30s infinite;
+    background-color: var(--bc_color);
+    /* animation: body_switch_collor 30s infinite; */
 }
 
 :root {
-    --coror_fo_cube: red;
+    --coror_fo_cube: white;
+    --bc_color: black;
 }
 
 @keyframes body_switch_collor {
@@ -122,7 +124,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    /* border: var(--coror_fo_cube) 3px solid; */
+    border: white 1px solid;
 }
 
 .up {
@@ -139,9 +141,9 @@ body {
     content: '';
     position: absolute;
     background-color: var(--coror_fo_cube);
-    box-shadow: 1px 1px 20px 19px var(--coror_fo_cube);
+    box-shadow: 1px 1px 70px 70px var(--coror_fo_cube);
     transform: translateZ(-200px);
-    border-radius: 15px;
+    border-radius: 20%;
 }
 
 .left {
